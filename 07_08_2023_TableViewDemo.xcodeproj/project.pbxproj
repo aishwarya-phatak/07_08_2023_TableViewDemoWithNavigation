@@ -18,6 +18,7 @@
 		6845D4EB2ACBD996008649E8 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6845D4E92ACBD996008649E8 /* StudentTableViewCell.swift */; };
 		6845D4EC2ACBD996008649E8 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6845D4EA2ACBD996008649E8 /* StudentTableViewCell.xib */; };
 		6845D4EE2ACBDC15008649E8 /* PassStudentDataToFVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6845D4ED2ACBDC15008649E8 /* PassStudentDataToFVC.swift */; };
+		6866B5FD2ACD22A90016AE8D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6866B5FC2ACD22A90016AE8D /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6845D4E92ACBD996008649E8 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		6845D4EA2ACBD996008649E8 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 		6845D4ED2ACBDC15008649E8 /* PassStudentDataToFVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassStudentDataToFVC.swift; sourceTree = "<group>"; };
+		6866B5FC2ACD22A90016AE8D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				6845D4E92ACBD996008649E8 /* StudentTableViewCell.swift */,
 				6845D4EA2ACBD996008649E8 /* StudentTableViewCell.xib */,
 				6845D4ED2ACBDC15008649E8 /* PassStudentDataToFVC.swift */,
+				6866B5FC2ACD22A90016AE8D /* ThirdViewController.swift */,
 			);
 			path = 07_08_2023_TableViewDemo;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				6845D4EE2ACBDC15008649E8 /* PassStudentDataToFVC.swift in Sources */,
 				6845D4D22ACBD537008649E8 /* AppDelegate.swift in Sources */,
 				6845D4D42ACBD537008649E8 /* SceneDelegate.swift in Sources */,
+				6866B5FD2ACD22A90016AE8D /* ThirdViewController.swift in Sources */,
 				6845D4EB2ACBD996008649E8 /* StudentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

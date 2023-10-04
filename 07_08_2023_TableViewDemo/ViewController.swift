@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var studentTableView: UITableView!
     private let studentTableViewCellIdentifier : String = "StudentTableViewCell"
     private let secondViewControllerIdentifier : String = "SecondViewController"
+    private let thirdViewControllerIdentifier : String = "ThirdViewController"
     
     var students : [Student] = []
     override func viewDidLoad() {
@@ -58,9 +59,33 @@ extension ViewController : UITableViewDataSource{
         
         return studentTableViewCell ?? UITableViewCell()
     }
+    
+    //MARK : didSelectRowAt function implementation
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        let thirdViewController = self.storyboard?.instantiateViewController(withIdentifier: thirdViewControllerIdentifier) as? ThirdViewController
+        
+        thirdViewController?.dataContainer = students[indexPath.row]        //indexPath.row - this will return you the index of the row bwing clicked
+        
+        navigationController?.pushViewController(thirdViewController!, animated: true)
+    }
+    
+    //MARK : deleting rows - swipe and delete functionality
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete{
+            self.studentTableView.beginUpdates()
+            self.studentTableView.deleteRows(
+                at: [indexPath],
+                with: .fade)
+            self.students.remove(at: indexPath.row)
+            self.studentTableView.endUpdates()
+        }
+    }
 }
 
 extension ViewController : UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 132.0
     }
